@@ -23,11 +23,13 @@ function App() {
         <div className='country-list'>
           {europeanCountries.map((country, index) => (
             <div key={index} className='country-card'>
-              <img className='flag-image' src={country.flags.svg} alt={'flag of ${country.name.common}'} />
+              <div className='flag-container'>
+              <img className='flag-image' src={country.flags.svg} />
+              </div>
               <div className='country-infos'>
               <p className='country-name'>Name: {country.name.common}</p>
               <p className='country-capital'>Capital: {country.capital[0]}</p> 
-              <p className='country-region'>Region: {country.region}</p>
+              <p className='country-flag-description'>Description of flag: {country.flags.alt}</p>
               </div>
             </div>
           ))}

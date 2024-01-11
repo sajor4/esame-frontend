@@ -1,45 +1,57 @@
 .app {
   display: flex;
   justify-content: center;
-  
+
 }
 
 .country-list {
+  padding: 0 50 0 50;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   background-image: url('./images/background.svg');
   background-attachment: fixed;
   background-size: 100vh;
+  padding-top: 50px;
 }
 
 .country-card {
-  background-color:#f0f8ff37;
+  background-color: #f0f8ff37;
   border-radius: 20px;
   padding: 15px;
-  width: 250px;
+  width: 300px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
-}
+  color: aliceblue;
 
-.country-card p {
-  font-size: 0.9rem;
 }
 
 .country-card:hover {
-  background-color: white;
-  cursor: pointer;
+  background-color: aliceblue;
+  color: rgb(106, 13, 212);
 }
 
+.country-card p {
+  margin: 10px;
+}
+
+.country-name, .country-capital {
+  font-size: 1.2rem;
+}
 
 .flag-image {
-  max-width: 100px;
+  max-width:200px;
+  max-height: 100px;
 }
 
 .country-infos {
   margin-top: 20px;
+}
+
+.country-flag-description {
+  font-size: 0.8rem;
 }
